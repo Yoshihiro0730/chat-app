@@ -48,7 +48,6 @@ export default function Home() {
         ):(
           <Auth />
         )}
-        {/* <Auth onAuthComplete={AuthHandler} /> */}
     </>
   );
 }

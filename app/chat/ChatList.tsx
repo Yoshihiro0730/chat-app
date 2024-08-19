@@ -14,7 +14,7 @@ interface MatchingItem {
 }
 
 interface Participants {
-    [userId: string]: string;  // 値を string に変更
+    [userId: string]: string;
 }
 
 interface ChatProps {

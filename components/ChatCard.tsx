@@ -107,7 +107,7 @@ const ChatCard: React.FC<ChatCardProps> = ({ id, participants, currentUserId }) 
                             {userData.nickname}
                         </Typography>
                     }
-                    sx={{ my: 0 }} // マージンを0に設定して上下中央揃えを助ける
+                    sx={{ my: 0 }}
                 />
             </StyledListItem>
         </StyledPaper>

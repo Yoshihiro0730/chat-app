@@ -100,18 +100,6 @@ const MatchingModal: React.FC<MatchingProps> = ({ userId, sendUserId, onClose })
                 set(userRef, true),
                 set(otherUserRef, true)
             ])
-            
-            // const snapShot = await get(Ref);
-            // if (!snapShot.exists()) {
-            //     const participants = {
-            //         [userId]: userId,
-            //         [sendUserId]: sendUserId 
-            //     };
-                
-            //     await set(Ref, {
-            //         participants: participants,
-            //         createdAt: Date.now()
-            //     });
             console.log("チャットルームができました。");
         } catch (error) {
             console.error("サーバ接続に失敗しました。", error);
