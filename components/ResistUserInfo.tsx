@@ -61,7 +61,7 @@ const ResistUserInfo:React.FC<UserProps> = ({ userId, onComplete }) => {
                 setLocation(value);
                 break;
             case "portFolio":
-                setPortFolio(value.slice(0,400)); //最大文字数指定
+                setPortFolio(value.slice(0,400));
                 break;
         }
     };
@@ -120,8 +120,6 @@ const ResistUserInfo:React.FC<UserProps> = ({ userId, onComplete }) => {
         } finally {
             setIsloading(false);
         }
-        // console.log(formData);
-
     };
 
     if(loading) {

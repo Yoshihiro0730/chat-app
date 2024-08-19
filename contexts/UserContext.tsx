@@ -3,7 +3,7 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
-import { auth } from '@/lib/FirebaseConfig'; // Firebaseの設定ファイルのパスを適切に指定してください
+import { auth } from '@/lib/FirebaseConfig';
 
 interface UserContextType {
   user: User | null;
