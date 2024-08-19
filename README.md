@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ①課題番号-プロダクト名
 
-## Getting Started
+マッチングアプリ
 
-First, run the development server:
+## ②課題内容（どんな作品か）
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ユーザー同士のマッチング機能
+- マッチングしたユーザー同士のチャット機能
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ③DEMO
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://chat-app-cs89.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
-## Learn More
+- ID: test3@example.com
+- PW: test3_2024
 
-To learn more about Next.js, take a look at the following resources:
+## ⑤工夫した点・こだわった点
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- サーバーサイドレンダリング実装
+- 環境変数はenvファイルで管理
+- 画像も扱いたかったのでCloud Storageを仕様
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ⑥難しかった点・次回トライしたいこと(又は機能)
 
-## Deploy on Vercel
+- 状態管理の実装で複雑化したので、Redux等を取り入れたい
+- DBと違ってJSON形式でデータを管理しないといけないため、設計が大変だった
+- UIにこだわれなかったため、UIをリッチにしたい
+- Google認証に着手したかった
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⑦質問・疑問・感想、シェアしたいこと等なんでも
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [質問]
+- [感想]コンポーネント間のパラメーターの受け渡しが多く、実装が大変でした。
+        自作APIを作ってより高度なシステムの開発をしてみたいと思いました。
+        動的レンダリングのため静的コンテンツが生成できず、サクラサーバーでのデプロイができなかった。
+- [参考記事]
+  - 1. https://zenn.dev/tr19/articles/d171ce03569b99
+  - 2. https://zenn.dev/blueish/articles/4b2ae3781ade57
+  - 3. https://qiita.com/Thang_TQ/items/1e1d86bffd2288ce1865
